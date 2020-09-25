@@ -19,12 +19,20 @@ nav {
     border-bottom: 2px solid var(--dark-border-color);
 }
 
+.navbar-brand {
+    margin: 0 16px;
+}
+
+.navbar-toggler {
+    margin: 8px 0;
+}
+
 nav img {
     max-height: 70px;
 }
 
 h1, h2 {
-    margin: 3%;
+    margin: 1%;
     color: var(--text-color);
 }
 
@@ -39,15 +47,16 @@ h1, h2 {
 }
 
 .personal-pics {
-    margin: 3rem;
     border-radius: 30px;
-    height: 250px;
+    max-width: 85%;
+    max-height: 85%;
     box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.5);
 }
 
 .text-box {
     display: flex;
     margin: 6% 3%;
+    padding: 15px;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
@@ -58,18 +67,6 @@ h1, h2 {
     text-align: center;
 }
 
-/*
-.center {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 260px;
-    background-color: white;
-
-    border: 3px solid green;
-}*/
 .btn {
     border: 1px solid var(--alt-border-color);
     background-color: var(--alt-bg-color);
@@ -80,6 +77,10 @@ h1, h2 {
     border: 1px solid var(--alt-bg-color);
     background-color: var(--alt-border-color);
     color: var(--text-color);
+}
+
+.contact-links .btn {
+    font-size: 1.5em;
 }
 
 .fa {
@@ -100,5 +101,5 @@ hr {
 }
 
 footer img {
-    max-width: 40%;
+    max-width: 30%;
 }
