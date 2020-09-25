@@ -1,11 +1,10 @@
 :root {
     --dark-bg-color: #2B4A6F;
     --dark-ribbon-color: #143153;
-    --dark-text-color: #1F1F1F;
-    --dark-border-color: #550400;
-    --light-bg-color: lightgrey;
-    --light-text-color: lightgrey;
-    --light-border-color: lightgrey;
+    --dark-border-color: #051C38;
+    --alt-bg-color: #801515;
+    --alt-border-color: #550000;
+    --text-color: #DDD;
 }
 
 html, body {
@@ -16,63 +15,87 @@ html, body {
     background-color: var(--dark-ribbon-color) !important;
 }
 
+nav {
+    border-bottom: 2px solid var(--dark-border-color);
+}
+
 nav img {
     max-height: 70px;
 }
 
-#productCarousel img {
+h1, h2 {
+    margin: 3%;
+    color: var(--text-color);
+}
+
+#image-carousel img {
     border-radius: 30px;
 }
 
-#productCarousel {
+#image-carousel {
     margin: 2%;
     border-radius: 30px;
     box-shadow: 0px 0px 30px 8px rgba(0, 0, 0, 0.5);
 }
 
-.deals {
-    display: flex;
-    margin: 1%;
-    color: #DDD;
-    justify-content: center;
-}
-
-.deals h2 {
-    font-weight: bolder;
-    font-size: 3em;
-}
-
-.card {
-    margin: 1rem;
+.personal-pics {
+    margin: 3rem;
+    border-radius: 30px;
+    height: 250px;
     box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.5);
 }
 
-.personal-pics {
-  margin: 3rem;
-  border-radius: 30px;
-  height: 250px;
-  box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.5);
+.text-box {
+    display: flex;
+    margin: 6% 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid var(--alt-border-color);
+    background-color: var(--alt-bg-color);
+    color: var(--text-color);
+    font-size: 1.5em;
+    text-align: center;
 }
+
 .center {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 260px;
-  background-color: white; /* fix style */
-  border: 3px solid green;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 260px;
+    background-color: white;
+    /* fix style */
+    border: 3px solid green;
 }
-.button-color {
-  background-color: #000000;
+
+.btn {
+    border: 1px solid var(--alt-border-color);
+    background-color: var(--alt-bg-color);
+    color: var(--text-color);
+}
+
+.btn:hover {
+    border: 1px solid var(--alt-bg-color);
+    background-color: var(--alt-border-color);
+    color: var(--text-color);
+}
+
+.fa {
+    color: var(--alt-bg-color);
+}
+
+.fa:hover {
+    color: var(--alt-border-color);
 }
 
 footer {
-    color: #DDD;
+    color: var(--text-color);
 }
 
 hr {
-    background-color: #DDD;
+    background-color: var(--text-color);
     max-width: 80%;
 }
 
