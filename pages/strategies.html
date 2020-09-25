@@ -13,39 +13,105 @@
 
 <body>
     <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a href="/index.html" class="navbar-brand"><img src="/assets/WhiteLogo.svg" alt=""></a>
+
+            <form class="d-flex flex-fill">
+                <input class="form-control ml-2 mr-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary mr-2" type="submit">Search</button>
+            </form>
+
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto align-self-end">
+                    <li class="nav-item">
+                        <a href="/index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/game.html" class="nav-link">Tic-Tac-Toe</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="/pages/strategies.html" class="nav-link">Stategies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/about.html" class="nav-link">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <h1 class="text-center">Winning Strategies</h1>
     <div class="container">
-      <div class="row">
-        <div class="col-sm-8">
-            <div class=""><p>
-              <h2>Tic Tac Toe Basics</h2>
-              <ul>
-                <li>Tic Tac Toe is a game that is played on a grid of 9 squares</li>
-                <li>To start, each player is assigned a symbol (x or o)
-                <li>Players alternate choosing where to place their symbol on the board</li>
-                <li>The game is won when one player gets 3 in a row</li>
-                <li>Players can win using columns, rows, or the diagonals</li>
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="">
+                    <p>
+                    <h2>Tic Tac Toe Basics</h2>
+                    <ul>
+                        <li>Tic Tac Toe is a game that is played on a grid of 9 squares</li>
+                        <li>To start, each player is assigned a symbol (x or o)
+                        <li>Players alternate choosing where to place their symbol on the board</li>
+                        <li>The game is won when one player gets 3 in a row</li>
+                        <li>Players can win using columns, rows, or the diagonals</li>
 
-              </ul>
-              <!-- Basic Rules -->
-              <hr>
-              <h2>Pro Strategies</h2>
+                    </ul>
+                    <!-- Basic Rules -->
+                    <hr>
+                    <h2>Pro Strategies</h2>
 
-              <h4>Intro</h4>
-              <p>While tic tac toe often ends in a draw, there are some powerful strategies that can help you to win.</p>
-              <h4>Going First</h4>
-              <p>When going first, there are some options that are better than others</p>
-              
-              <!-- Strategies -->
-            </p></div>
+                    <h4>Intro</h4>
+                    <p>While tic tac toe often ends in a draw, there are some powerful strategies that can help you to win.</p>
+                    <h4>Going First</h4>
+                    <p>When going first, there are some options that are better than others</p>
+
+                    <!-- Strategies -->
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4 picture-background">
+                <img class="personal-pics" src="../assets/BlackLogo.svg" alt="Logo" style="border-radius: 0px;">
+                <!-- Pictures -->
+            </div>
         </div>
-        <div class="col-sm-4 picture-background">
-          <img class="personal-pics" src="../assets/BlackLogo.svg" alt="Logo" style="border-radius: 0px;">
-          <!-- Pictures -->
-        </div>
-      </div>
     </div>
+
     <!-- Footer -->
+    <footer class="bg-dark">
+        <div class="container-fluid padding">
+            <div class="row text-center justify-content-center align-items-center">
+                <div class="col-md-4">
+                    <hr>
+                    <img src="/assets/WhiteLogo.svg" alt="">
+                    <hr>
+                    <p>(123) 456-7890</p>
+                    <p>support@tictactoe.com</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="copyright">© 2020 Copyright: Tic-Tac-Toe Inc. </p>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-3">
+                            <a href="https://www.facebook.com"><i class="fa fa-facebook fa-2x"></i></a>
+                        </div>
+                        <div class="col-3">
+                            <a href="https://www.twitter.com"><i class="fa fa-twitter fa-2x"></i></a>
+                        </div>
+                        <div class="col-3">
+                            <a href="https://www.linkedin.com"><i class="fa fa-linkedin fa-2x"></i></a>
+                        </div>
+                        <div class="col-3">
+                            <a href="https://www.pinterest.com"><i class="fa fa-instagram fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
