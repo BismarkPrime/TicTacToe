@@ -58,6 +58,7 @@ h1, h2 {
     text-align: center;
 }
 
+/*
 .center {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -66,10 +67,9 @@ h1, h2 {
     align-items: center;
     height: 260px;
     background-color: white;
-    /* fix style */
-    border: 3px solid green;
-}
 
+    border: 3px solid green;
+}*/
 .btn {
     border: 1px solid var(--alt-border-color);
     background-color: var(--alt-bg-color);
