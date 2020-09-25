@@ -4,7 +4,7 @@
     --dark-text-color: #1F1F1F;
     --dark-border-color: #550400;
     --light-bg-color: lightgrey;
-    --light-text-color: lightgrey;
+    --light-text-color: #DDD;
     --light-border-color: lightgrey;
 }
 
@@ -17,7 +17,7 @@ html, body {
 }
 
 nav img {
-    max-height: 70px;
+    max-height: 75px;
 }
 
 #productCarousel img {
@@ -30,29 +30,13 @@ nav img {
     box-shadow: 0px 0px 30px 8px rgba(0, 0, 0, 0.5);
 }
 
-.deals {
-    display: flex;
-    margin: 1%;
-    color: #DDD;
-    justify-content: center;
-}
-
-.deals h2 {
-    font-weight: bolder;
-    font-size: 3em;
-}
-
-.card {
-    margin: 1rem;
-    box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.5);
-}
-
 footer {
-    color: #DDD;
+    color: var(--light-light-color);
 }
 
 hr {
-    background-color: #DDD;
+    background-color: var(--light-text-color);
+    ;
     max-width: 80%;
 }
 
