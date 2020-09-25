@@ -1,0 +1,61 @@
+:root {
+    --dark-bg-color: #2B4A6F;
+    --dark-ribbon-color: #143153;
+    --dark-text-color: #1F1F1F;
+    --dark-border-color: #550400;
+    --light-bg-color: lightgrey;
+    --light-text-color: lightgrey;
+    --light-border-color: lightgrey;
+}
+
+html, body {
+    background-color: var(--dark-bg-color);
+}
+
+.bg-dark {
+    background-color: var(--dark-ribbon-color) !important;
+}
+
+nav img {
+    max-height: 70px;
+}
+
+#productCarousel img {
+    border-radius: 30px;
+}
+
+#productCarousel {
+    margin: 2%;
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px 8px rgba(0, 0, 0, 0.5);
+}
+
+.deals {
+    display: flex;
+    margin: 1%;
+    color: #DDD;
+    justify-content: center;
+}
+
+.deals h2 {
+    font-weight: bolder;
+    font-size: 3em;
+}
+
+.card {
+    margin: 1rem;
+    box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    color: #DDD;
+}
+
+hr {
+    background-color: #DDD;
+    max-width: 80%;
+}
+
+footer img {
+    max-width: 50%;
+}
