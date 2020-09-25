@@ -1,9 +1,19 @@
+:root {
+    --dark-bg-color: #2B4A6F;
+    --dark-ribbon-color: #143153;
+    --dark-text-color: #1F1F1F;
+    --dark-border-color: #550400;
+    --light-bg-color: lightgrey;
+    --light-text-color: lightgrey;
+    --light-border-color: lightgrey;
+}
+
 html, body {
-    background-color: #4B688B;
+    background-color: var(--dark-bg-color);
 }
 
 .bg-dark {
-    background-color: #143153 !important;
+    background-color: var(--dark-ribbon-color) !important;
 }
 
 nav img {
