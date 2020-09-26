@@ -45,7 +45,17 @@
       </div>
     </div>
   </nav>
-
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+          <h1 class="text-right">Play the Game!</h1>
+      </div>
+      <div class="col-sm-1"></div>
+      <div class="col-sm-3">
+        <div class="text-box">Current turn: X's</div>
+      </div>
+    </div>
+  </div>
 
   <div class="container-fluid">
     <div class="row-fluid justify-content-center" style="width: 100%; display: flex; flex-direction: row; justify-content: space-around;">
@@ -110,25 +120,23 @@
   </div>
 
   <!-- Bootstrap game grid -->
-
+  <hr>
+  <h2 class="text-center">Score Board:</h2>
   <!-- Scores -->
   <div class="container">
-    <div class="row">
-      <div class="col-sm-3 gameboard">
+    <div class="row justify-content-center">
+      <div class="col-xs-3">
+        <div class="text-box scores">X's:</div>
       </div>
-      <div class="col-sm-2 gameboard">
-        Player 1 score:
+      <div class="col-xs-3">
+        <div class="text-box scores">Tied:</div>
       </div>
-      <div class="col-sm-2 gameboard">
-        Tied games:
-      </div>
-      <div class="col-sm-2 gameboard">
-        Player 2 score:
-      </div>
-      <div class="col-sm-3 gameboard">
+      <div class="col-xs-3">
+        <div class="text-box scores">O's:</div>
       </div>
     </div>
   </div>
+  <hr>
 
   <!-- Footer -->
   <footer class="bg-dark">
