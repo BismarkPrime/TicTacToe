@@ -92,10 +92,11 @@ h1, h2 {
     color: var(--text-color);
     margin: 1%;
 }
+
 .scores {
-  color: #ffffff;
-  margin: 45px;
-  padding: 35px;
+    color: #ffffff;
+    margin: 45px;
+    padding: 35px;
 }
 
 .btn:hover {
@@ -109,11 +110,15 @@ h1, h2 {
 }
 
 .fa {
-    color: var(--alt-bg-color);
+    color: var(--text-color);
 }
 
 .fa:hover {
-    color: var(--alt-border-color);
+    color: var(--alt-bg-color);
+}
+
+a, a:hover {
+    color: var(--text-color);
 }
 
 footer {
@@ -132,9 +137,10 @@ footer img {
 footer img {
     margin: 3%;
 }
+
 @media screen and (max-width: 576px) {
-  .text-right {
-    display: flex;
-    justify-content: center;
-  }
+    .text-right {
+        display: flex;
+        justify-content: center;
+    }
 }
