@@ -19,12 +19,20 @@ nav {
     border-bottom: 2px solid var(--dark-border-color);
 }
 
-.navbar-brand {
-    margin: 0 16px;
-}
+.navbar-brand {}
 
 .navbar-toggler {
     margin: 8px 0;
+}
+
+.nav-item:hover {
+    background-color: var(--dark-border-color);
+    border-radius: 10px;
+    border: 2px solid var(--dark-bg-color);
+}
+
+#search-bar {
+    margin-top: 10px;
 }
 
 nav img {
@@ -67,10 +75,22 @@ h1, h2 {
     text-align: center;
 }
 
+.paragraph-box {
+    margin: 6% 3%;
+    padding: 15px;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid var(--alt-border-color);
+    background-color: var(--alt-bg-color);
+    color: var(--text-color);
+    font-size: 1em;
+}
+
 .btn {
     border: 1px solid var(--alt-border-color);
     background-color: var(--alt-bg-color);
     color: var(--text-color);
+    margin: 1%;
 }
 
 .btn:hover {
@@ -102,4 +122,8 @@ hr {
 
 footer img {
     max-width: 30%;
+}
+
+footer img {
+    margin: 3%;
 }

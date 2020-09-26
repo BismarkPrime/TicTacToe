@@ -12,20 +12,19 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container-fluid">
-            <a href="/index.html" class="navbar-brand"><img src="/assets/WhiteLogo.svg" alt=""></a>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+            <a href="/index.html" class="navbar-brand mr-auto"><img src="/assets/WhiteLogo.svg" alt=""></a>
 
-            <form class="d-flex flex-fill">
-                <input class="form-control ml-2 mr-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-primary mr-2" type="submit">Search</button>
-            </form>
-
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive">
+            <button type="button" class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarResponsive">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto align-self-end">
+                <form id="search-bar" class="d-flex flex-fill align-items-center">
+                    <input class="form-control ml-2 mr-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a href="/index.html" class="nav-link">Home</a>
                     </li>
@@ -47,64 +46,69 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-8">
-                <p>
+
                 <h2>Tic Tac Toe Basics</h2>
-                <ul>
-                    <li>Tic Tac Toe is a game that is played on a grid of 9 squares</li>
-                    <li>To start, each player is assigned a symbol (x or o)
-                    <li>Players alternate choosing where to place their symbol on the board</li>
-                    <li>The game is won when one player gets 3 in a row</li>
-                    <li>Players can win using columns, rows, or the diagonals</li>
-
-                </ul>
-                <!-- Basic Rules -->
-                <hr>
-                <h2>Pro Strategies</h2>
-
-                <h4>Intro</h4>
-                <p>While tic tac toe often ends in a draw, there are some powerful strategies that can help you to win.</p>
-                <h4>Going First</h4>
-                <p>When going first, there are some options that are better than others</p>
-                <p>While the center is tempting, your best move will actually be to start in the corner</p>
-                <div class="text-center center"><img class="ticboard" src="../assets/corn.svg" alt="start in corner"></div>
-                <p>If you start in the corner you can guarantee a win as long as your opponent's first move isn't the center</p>
-                <p>To guarantee the win, your next move needs to take a corner that leaves an open space between your two spots.
-                    This will force your opponent to block your win</p>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="text-center"><strong>Your opponent plays a corner</strong></div>
-                            <div class="text-center center"><img class="ticboard" src="../assets/corn-corn.svg" alt="start in corner"></div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="text-center"><strong>Your opponent doesn't play a corner</strong></div>
-                            <div class="text-center center"><img class="ticboard" src="../assets/corn-non.svg" alt="start in corner"></div>
-                            <!-- Our Info -->
-                        </div>
-                    </div>
+                <div class="paragraph-box">
+                    <ul>
+                        <li>Tic Tac Toe is a game that is played on a grid of 9 squares</li>
+                        <li>To start, each player is assigned a symbol (x or o)
+                        <li>Players alternate choosing where to place their symbol on the board</li>
+                        <li>The game is won when one player gets 3 in a row</li>
+                        <li>Players can win using columns, rows, or the diagonals</li>
+                    </ul>
                 </div>
-                <p>You then place your next symbol in the final corner if their first move was in a corner. If not, you place your next move in the center.
-                    These moves will give you two possible winning moves on your next turn and make it impossible for your opponent to block both.
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="text-center"><strong>Your opponent played a corner</strong></div>
-                            <div class="text-center center"><img class="ticboard" src="../assets/corn-corn2.svg" alt="start in corner"></div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="text-center"><strong>Your opponent didn't play a corner</strong></div>
-                            <div class="text-center center"><img class="ticboard" src="../assets/corn-non2.svg" alt="start in corner"></div>
-                            <!-- Our Info -->
-                        </div>
-                    </div>
-                </div>
-                <p>That's how to win tic-tac-toe when you go first!</p>
-                <!-- Strategies -->
-                </p>
             </div>
-            <div class="col-sm-4 picture-background">
+            <div class="col-sm-4 picture-background align-self-center">
                 <img class="personal-pics" src="../assets/BlackLogo.svg" alt="Logo" style="border-radius: 0px;">
                 <!-- Pictures -->
+            </div>
+            <!-- Basic Rules -->
+            <div class="col-12">
+                <hr>
+                <div class="paragraph-box">
+                    <h2>Pro Strategies</h2>
+                    <h4>Intro</h4>
+                    <p>While tic tac toe often ends in a draw, there are some powerful strategies that can help you to win.</p>
+                    <h4>Going First</h4>
+                    <p>When going first, there are some options that are better than others</p>
+                    <p>While the center is tempting, your best move will actually be to start in the corner</p>
+                    <div class="text-center center"><img class="ticboard" src="../assets/corn.svg" alt="start in corner"></div>
+                    <p>If you start in the corner you can guarantee a win as long as your opponent's first move isn't the center</p>
+                    <p>To guarantee the win, your next move needs to take a corner that leaves an open space between your two spots.
+                        This will force your opponent to block your win</p>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="text-center"><strong>Your opponent plays a corner</strong></div>
+                                <div class="text-center center"><img class="ticboard" src="../assets/corn-corn.svg" alt="start in corner"></div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="text-center"><strong>Your opponent doesn't play a corner</strong></div>
+                                <div class="text-center center"><img class="ticboard" src="../assets/corn-non.svg" alt="start in corner"></div>
+                                <!-- Our Info -->
+                            </div>
+                        </div>
+                    </div>
+                    <p>You then place your next symbol in the final corner if their first move was in a corner. If not, you place your next move in the center.
+                        These moves will give you two possible winning moves on your next turn and make it impossible for your opponent to block both.
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="text-center"><strong>Your opponent played a corner</strong></div>
+                                <div class="text-center center"><img class="ticboard" src="../assets/corn-corn2.svg" alt="start in corner"></div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="text-center"><strong>Your opponent didn't play a corner</strong></div>
+                                <div class="text-center center"><img class="ticboard" src="../assets/corn-non2.svg" alt="start in corner"></div>
+                                <!-- Our Info -->
+                            </div>
+                        </div>
+                    </div>
+                    <p>That's how to win tic-tac-toe when you go first!</p>
+                    <!-- Strategies -->
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -114,9 +118,7 @@
         <div class="container-fluid padding">
             <div class="row text-center justify-content-center align-items-center">
                 <div class="col-md-4">
-                    <hr>
-                    <img src="/assets/WhiteLogo.svg" alt="">
-                    <hr>
+                    <img src="/assets/WhiteShortLogo.svg" alt="">
                     <p>(123) 456-7890</p>
                     <p>support@tictactoe.com</p>
                 </div>

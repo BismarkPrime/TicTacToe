@@ -13,20 +13,19 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container-fluid">
-            <a href="/index.html" class="navbar-brand"><img src="/assets/WhiteLogo.svg" alt=""></a>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+            <a href="/index.html" class="navbar-brand mr-auto"><img src="/assets/WhiteLogo.svg" alt=""></a>
 
-            <form class="d-flex flex-fill">
-                <input class="form-control ml-2 mr-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-primary mr-2" type="submit">Search</button>
-            </form>
-
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive">
+            <button type="button" class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarResponsive">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto align-self-end">
+                <form id="search-bar" class="d-flex flex-fill align-items-center">
+                    <input class="form-control ml-2 mr-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a href="/index.html" class="nav-link">Home</a>
                     </li>
@@ -81,11 +80,13 @@
         </div>
     </div>
 
-    <div class="info-box">
+    <div class="text-center">
         <h2>Tic-Tac-Toe!</h2>
-        <p>Tic-Tac-Toe is a game known to most if not all people in the United States. Sometimes reffered to as
-            Noughts and Crosses in the UK, this game involves taking turns placing an 'X' or an 'O' on a three-by-three
-            grid. The objective is to get "three-in-a-row", which can be vertical, horizontal, or diagonal.</p>
+        <div class="text-box">
+            <p>Tic-Tac-Toe is a game known to most if not all people in the United States. Sometimes reffered to as
+                Noughts and Crosses in the UK, this game involves taking turns placing an 'X' or an 'O' on a three-by-three
+                grid. The objective is to get "three-in-a-row", which can be vertical, horizontal, or diagonal.</p>
+        </div>
     </div>
 
     <!-- Footer -->
@@ -93,9 +94,7 @@
         <div class="container-fluid padding">
             <div class="row text-center justify-content-center align-items-center">
                 <div class="col-md-4">
-                    <hr>
-                    <img src="/assets/WhiteLogo.svg" alt="">
-                    <hr>
+                    <img src="/assets/WhiteShortLogo.svg" alt="">
                     <p>(123) 456-7890</p>
                     <p>support@tictactoe.com</p>
                 </div>
