@@ -132,3 +132,9 @@ footer img {
 footer img {
     margin: 3%;
 }
+@media screen and (max-width: 576px) {
+  .text-right {
+    display: flex;
+    justify-content: center;
+  }
+}
